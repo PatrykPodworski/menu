@@ -1,3 +1,5 @@
+import { Cocktail } from "./Cocktail.ts";
+
 export const mockData: Cocktail[] = [
   {
     name: "Old Fashioned",
@@ -36,10 +38,3 @@ export const mockData: Cocktail[] = [
     src: "/cocktails/espresso-martini.png",
   },
 ];
-
-type Cocktail = {
-  name: string;
-  ingredients: string[];
-  tasteNotes: string;
-  src: string;
-};
