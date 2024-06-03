@@ -1,7 +1,8 @@
-import { Menu } from "../components/Menu/mod.ts";
+import { Menu } from "../components/Menu.tsx";
+import { mockCocktails } from "../models/mockData.ts";
 
 const Home = () => {
-  return <Menu />;
+  return <Menu items={mockCocktails} title="The Menu" />;
 };
 
 export default Home;

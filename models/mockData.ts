@@ -1,4 +1,6 @@
-export const mockData: Cocktail[] = [
+import { Cocktail } from "./Cocktail.ts";
+
+export const mockCocktails: Cocktail[] = [
   {
     name: "Old Fashioned",
     ingredients: ["Bourbon", "Simple Syrup", "Angostura Aromatic Bitters"],
@@ -37,9 +39,9 @@ export const mockData: Cocktail[] = [
   },
 ];
 
-type Cocktail = {
-  name: string;
-  ingredients: string[];
-  tasteNotes: string;
-  src: string;
+export const cocktailToAdd: Cocktail = {
+  name: "Margarita",
+  ingredients: ["Tequila", "Lime Juice", "Cointreau", "Agave Syrup"],
+  tasteNotes: "tangy, citrusy",
+  src: "/cocktails/margarita.png",
 };
